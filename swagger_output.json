@@ -235,6 +235,48 @@
         ]
       }
     },
+    "/api/note/user": {
+      "get": {
+        "tags": [
+          "Notes"
+        ],
+        "summary": "Get All User Note by User",
+        "description": "Endpoint to get All User Note by user.",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "description": "Limit of notes to be returned",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Notes gotten successfully"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "500": {
+            "description": "Notes gotten failed"
+          }
+        },
+        "security": [
+          {
+            "JWT": []
+          }
+        ]
+      }
+    },
     "/api/note/{id}": {
       "get": {
         "tags": [
