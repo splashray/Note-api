@@ -29,16 +29,16 @@ app.get("/", (req, res) => {
   // #swagger.tags = ['Testing']
   // #swagger.summary = 'Testing API'
   // #swagger.description = 'Endpoint to check if API is working.'
-  res.send(`Welcome to Note-Taking Api-
-    Click <a href="https://note-taking-app-api.onrender.com/doc">here</a> for Documentation.`)
+  res.send(`Welcome to Note-Taking Api v1-
+    Click <a href="https://note-taking-app-api.onrender.com/doc">here</a> for Documentation.
+    Welcome to Note-Taking Api v2-
+    Click <a href="https://api.codmify.com/doc">here</a> for Documentation.`);
 });
 
 //routes
 app.use("/api/auth", authRouter);
 app.use("/api/note", noteRouter);
 app.use("/api/user", userRouter);
-
-
 
 app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerFile));
 app.use(notFound);
