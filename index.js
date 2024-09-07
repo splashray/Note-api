@@ -31,6 +31,7 @@ app.get("/", (req, res) => {
   // #swagger.description = 'Endpoint to check if API is working.'
   res.send(`Welcome to Note-Taking Api v1-
     Click <a href="https://note-taking-app-api.onrender.com/doc">here</a> for Documentation.
+    OR
     Welcome to Note-Taking Api v2-
     Click <a href="https://api.codmify.com/doc">here</a> for Documentation.`);
 });
