@@ -23,4 +23,5 @@ jobs:
             cd /home/ec2-user/Note-api
             git pull origin main
             npm install
+            npm run swagger-autogen  # Generate Swagger docs before restarting the server
             pm2 restart Note-api
