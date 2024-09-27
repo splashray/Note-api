@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
     Click <a href="https://note-taking-app-api.onrender.com/doc">here</a> for Documentation.
     OR
     Welcome to Note-Taking Api v2-
-    Click <a href="https://api.codmify.com/doc">here</a> for Documentation.`);
+    Click <a href="https://api.codmify.com/doc">here</a> for Documentation. checking`);
 });
 
 //routes
